@@ -23,7 +23,6 @@ class TicketController extends Controller
         $validated = $request->validate([
             'title' => 'required|string|max:255',
             'description' => 'required|string',
-            'status' => 'required|in:open,pending,closed',
             'priority' => 'required|in:low,medium,high'
         ]);
 
